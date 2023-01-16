@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <style>
+        form{
+            text-align: center;
+        }
+        form fieldset{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>What do you think about our services?</h1>
+    <form action="mailto:awajif1@gmail.com" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Your details</legend>
+            <label>
+                Name:<br />
+                <input type="text" name="Name" placeholder="Enter full name" required="required">
+            </label><br />
+            <label>
+                Email:<br />
+                <input type="email" name="Mail" placeholder="example@example.com" required="required" title="please enter your personal email">
+            </label><br />
+            <label>
+                Mobile number:<br />
+                <input type="tel" name="Mobile number" id="" required="required" placeholder="Mobile number">
+            </label><br />
+            <select name="Gender" id="gender">
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="Gender" selected="selected">Gender</option>
+            </select>
+        </fieldset>
+        <label for="services">Which of our services was rendered to you?</label><br />
+        <select name="services" size="3" multiple="multiple" id="Services" title="Hold down the ctrl or command key to make multiple selections!!">
+            <option value="None" selected="selected">None</option>
+            <option value="Web design">Web design</option>
+            <option value="Graphics Design">Graphics design</option>
+            <option value="UI/UX design">UI/UX design</option>
+            <option value="software dev.">Software development</option>
+            <option value="server-side">Server-side development</option>
+            <option value="web dev.">Web development</option>
+        </select><br />
+        <textarea name="comment" id="" cols="30" rows="5" placeholder="Comment here..." required="required"></textarea>
+        <br />
+        Would you like us to give you updates on our services?
+        <input type="radio" name="updates" id="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="updates" id="no">
+        <label for="no">No</label><br />
+        <input type="submit" name="" value="Submit review">
+    </form>
+</body>
+</html>
