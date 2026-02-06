@@ -1,1 +1,1 @@
-# AwajifsTech
+# AwajifTech
